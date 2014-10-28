@@ -27,7 +27,7 @@ void AddNode(BSTreeNode *&Cur, int val)
 		AddNode(Cur->right, val);
 	}
 	else{
-		printf("duplicate val!/n");
+		printf("duplicate val!\n");
 	}
 }
 void inorder(BSTreeNode *root)
@@ -62,6 +62,7 @@ int main()
 	AddNode(root, 12);
 	AddNode(root, 14);
 	AddNode(root, 17);
+	AddNode(root, 8);
 	AddNode(root, 15);
 	inorder(root);
 	BStoList(root, tail);
